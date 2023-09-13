@@ -1,0 +1,9 @@
+#N canvas 180 231 924 530 12;
+#X text 15 24 Asa-Box mother;
+#N canvas 390 175 634 410 init 0;
+#X obj 8 30 loadbang;
+#X obj 8 54 t b b b b b;
+#X msg 62 110 \; pd dsp 1;
+#X connect 0 0 1 0;
+#X connect 1 3 2 0;
+#X restore 25 83 pd init;
