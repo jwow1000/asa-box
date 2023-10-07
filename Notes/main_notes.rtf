@@ -1,4 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2706
+{\rtf1\ansi\ansicpg1252\cocoartf2709
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
@@ -13,14 +13,13 @@
 	- New raspberry pi os needs a username and an encrypted password as a texfile in the boot. Use openssl passwd -1 to generate the key. Then save a text file with contents: name:<encrypted key>  save this as userconf.txt\
 	- then for ssh over usb in pi zero add: 
 \f1\fs26 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 dtoverlay=dwc2 to config.txt\
+dtoverlay=dwc2 to config.txt\
 	- after rootwait om the cmdline.txt file add: modules-load=dwc2,g_ether\
 	*** make sure to use only one space after rootwait\
 \
-
-\f0\fs24 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
 \
--to run HIFI berry hat all you need to do now is add: dtoverlay=hifiberry-dac to the config in boot, I believe you need to delete the old one if it exists.\
+
+\f0\fs24 \kerning1\expnd0\expndtw0 -to run HIFI berry hat all you need to do now is add: dtoverlay=hifiberry-dac to the config in boot, I believe you need to delete the old one if it exists.\
 \
 -pi zero has disk mode so that made it way easier than trying to set up wifi.\
 \
