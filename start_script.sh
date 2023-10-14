@@ -2,6 +2,8 @@
 
 killall pd
 
-pd -nogui -noadc ~/asa-box/main.pd
+pd -nogui -noadc /home/jwow/asa-box/main.pd
+
+exit 0
 
 
