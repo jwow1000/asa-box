@@ -1,0 +1,9 @@
+[Unit]
+Description=Run start script for asa-box
+After=multi-user.target
+
+[Service]
+ExecStart=/home/jwow/asa-box/start_script.sh
+
+[Install]
+WantedBy=multi-user.target
