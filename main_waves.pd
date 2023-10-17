@@ -1,4 +1,4 @@
-#N canvas 298 56 1022 512 12;
+#N canvas 449 93 1022 512 12;
 #X declare -path Faust_Stuff;
 #X declare -path lib;
 #X obj 26 55 declare -path Faust_Stuff;
