@@ -31,7 +31,7 @@
 #X obj 26 85 declare -path lib;
 #X text 286 9 48 53 55 60;
 #N canvas 63 88 450 300 load-sound 0;
-#X obj 20 20 main_waves 1;
+#X obj 20 20 main_pop 1;
 #X restore 37 294 pd load-sound;
 #X obj 185 109 r load-the-sound;
 #X msg 332 179 \; pd-load-sound clear \; pd-load-sound obj 20 20 main_waves 1;
@@ -48,4 +48,4 @@
 #X connect 9 0 8 0;
 #X connect 10 0 11 0;
 #X connect 11 0 8 0;
-#X connect 17 0 20 0;
+#X connect 17 0 18 0;
