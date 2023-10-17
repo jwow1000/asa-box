@@ -10,6 +10,7 @@
 #X obj 393 112 metro 500;
 #X obj 132 39 loadbang;
 #X msg 132 67 \; pd dsp 1;
+#X obj 452 188 print;
 #X connect 1 0 6 0;
 #X connect 2 0 0 0;
 #X connect 2 0 0 1;
@@ -20,4 +21,5 @@
 #X connect 6 0 2 0;
 #X connect 7 0 8 0;
 #X connect 8 0 5 0;
+#X connect 8 0 11 0;
 #X connect 9 0 10 0;
