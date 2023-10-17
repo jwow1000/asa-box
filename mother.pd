@@ -14,7 +14,6 @@
 #X obj 249 246 r mother-vol;
 #X obj 369 249 loadbang;
 #X obj 369 273 f 0.5;
-#X obj 375 307 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #N canvas 390 175 634 410 init 0;
 #X obj 8 30 loadbang;
 #X obj 8 104 t b b b b b;
@@ -31,13 +30,12 @@
 #X obj 26 55 declare -path Faust_Stuff;
 #X obj 26 85 declare -path lib;
 #X text 286 9 48 53 55 60;
-#N canvas 63 88 450 300 load-sound 1;
-#X obj 20 20 main_pop;
-#X obj 20 20 main_pop;
-#X obj 20 20 main_pop;
+#N canvas 63 88 450 300 load-sound 0;
+#X obj 20 20 main_pop 1;
 #X restore 293 160 pd load-sound;
-#X obj 333 49 r load-the-sound;
+#X obj 411 145 r load-the-sound;
 #X msg 333 97 \; pd-load-sound obj 20 20 main_pop 1;
+#X msg 404 175 \; pd-load-sound obj 20 20 main_waves 1;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -49,5 +47,4 @@
 #X connect 9 0 8 0;
 #X connect 10 0 11 0;
 #X connect 11 0 8 0;
-#X connect 12 0 11 0;
-#X connect 18 0 19 0;
+#X connect 17 0 19 0;
