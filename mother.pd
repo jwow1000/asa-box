@@ -1,4 +1,4 @@
-#N canvas 102 189 737 501 12;
+#N canvas 479 190 737 501 12;
 #X declare -path Faust_Stuff;
 #X declare -path lib;
 #X obj 48 451 dac~ 1 2;
@@ -31,7 +31,7 @@
 #X obj 26 85 declare -path lib;
 #X text 286 9 48 53 55 60;
 #N canvas 63 88 450 300 load-sound 0;
-#X obj 20 20 main_waves 1;
+#X obj 20 20 main_pop 1;
 #X restore 37 294 pd load-sound;
 #X obj 215 41 r load-the-sound;
 #X msg 186 138 \; pd-load-sound clear \; pd-load-sound obj 20 20 main_waves 1;
