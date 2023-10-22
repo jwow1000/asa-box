@@ -13,7 +13,6 @@
 #X obj 249 344 lop~ 5;
 #X obj 249 246 r mother-vol;
 #X obj 369 249 loadbang;
-#X obj 369 273 f 0.5;
 #N canvas 390 175 634 410 init 0;
 #X obj 8 30 loadbang;
 #X obj 8 104 t b b b b b;
@@ -40,6 +39,7 @@
 #X obj 357 420 s pd;
 #X obj 372 337 loadbang;
 #X msg 357 382 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 512;
+#X obj 369 273 f 0.1;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -49,8 +49,8 @@
 #X connect 8 0 7 1;
 #X connect 8 0 6 1;
 #X connect 9 0 8 0;
-#X connect 10 0 11 0;
-#X connect 11 0 8 0;
-#X connect 17 0 20 0;
-#X connect 22 0 23 0;
-#X connect 23 0 21 0;
+#X connect 10 0 23 0;
+#X connect 16 0 19 0;
+#X connect 21 0 22 0;
+#X connect 22 0 20 0;
+#X connect 23 0 8 0;
