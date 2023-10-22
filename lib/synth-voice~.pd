@@ -1,4 +1,4 @@
-#N canvas 150 175 1054 616 12;
+#N canvas 233 173 1054 616 12;
 #N canvas 63 88 935 658 faust-note 0;
 #X obj 126 135 unpack, f 12;
 #X obj 126 199 mtof;
@@ -50,7 +50,7 @@
 #X obj 211 86 sel 1;
 #X obj 365 183 del 5;
 #X obj 319 259 pack 0 5;
-#X obj 124 236 fix_richFM~;
+#X obj 168 239 rich_FM4~;
 #X connect 0 0 19 0;
 #X connect 2 0 3 0;
 #X connect 3 0 13 1;
