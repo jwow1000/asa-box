@@ -39,7 +39,7 @@
 #X obj 357 420 s pd;
 #X obj 372 337 loadbang;
 #X msg 357 382 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 512;
-#X obj 369 273 f 0.1;
+#X obj 369 273 f 0.5;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
