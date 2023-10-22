@@ -1,4 +1,4 @@
-#N canvas 479 190 737 501 12;
+#N canvas 535 54 905 589 12;
 #X declare -path Faust_Stuff;
 #X declare -path lib;
 #X obj 48 451 dac~ 1 2;
@@ -30,13 +30,16 @@
 #X obj 26 55 declare -path Faust_Stuff;
 #X obj 26 85 declare -path lib;
 #X text 286 9 48 53 55 60;
-#N canvas 63 88 450 300 load-sound 0;
+#N canvas 63 88 450 300 load-sound 1;
 #X obj 20 20 main_pop 1;
 #X restore 37 294 pd load-sound;
-#X obj 215 41 r load-the-sound;
+#X obj 382 11 r load-the-sound;
 #X msg 186 138 \; pd-load-sound clear \; pd-load-sound obj 20 20 main_waves 1;
-#X msg 532 118 \; pd-load-sound clear \;;
-#X msg 306 54 \; pd-load-sound clear \; pd-load-sound obj 20 20 main_pop 1;
+#X msg 486 150 \; pd-load-sound clear \;;
+#X msg 382 37 \; pd-load-sound clear \; pd-load-sound obj 20 20 main_pop 1;
+#X obj 357 420 s pd;
+#X obj 372 337 loadbang;
+#X msg 357 382 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 512;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -49,3 +52,5 @@
 #X connect 10 0 11 0;
 #X connect 11 0 8 0;
 #X connect 17 0 20 0;
+#X connect 22 0 23 0;
+#X connect 23 0 21 0;
