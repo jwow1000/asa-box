@@ -1,4 +1,4 @@
-#N canvas 119 107 1169 732 12;
+#N canvas 254 140 1169 732 12;
 #X text 26 25 Asa-Box pop ambient synth piece;
 #X obj 702 474 sel 0 1 2 3, f 22;
 #X obj 717 344 f;
@@ -72,8 +72,6 @@
 #X msg 915 530 vol 1;
 #X obj 676 218 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 855 306 s \$1-messages;
-#X floatatom 885 169 5 0 0 0 - - - 0;
-#X msg 880 205 smooth \$1;
 #X msg 897 421 a 2;
 #X connect 1 0 33 0;
 #X connect 1 1 34 0;
@@ -123,6 +121,4 @@
 #X connect 39 0 9 0;
 #X connect 40 0 7 1;
 #X connect 41 0 31 0;
-#X connect 43 0 44 0;
-#X connect 44 0 42 0;
-#X connect 45 0 7 1;
+#X connect 43 0 7 1;
