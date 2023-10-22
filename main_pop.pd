@@ -26,6 +26,8 @@
 #X obj 372 358 +~ 1;
 #X obj 28 217 clone -s 1 synth-voice~ 8 \$1;
 #X obj 42 145 poly 8 1, f 10;
+#X obj 332 172 grains-main \$1;
+#X obj 332 196 *~ 0.15;
 #X connect 0 0 18 0;
 #X connect 2 0 17 0;
 #X connect 3 0 11 0;
@@ -45,6 +47,8 @@
 #X connect 18 0 2 0;
 #X connect 18 1 2 1;
 #X connect 18 2 2 2;
+#X connect 19 0 20 0;
+#X connect 20 0 11 0;
 #X restore 718 639 pd pop-synth;
 #X msg 1007 520 pan 0.5;
 #X obj 723 237 del 5000;
