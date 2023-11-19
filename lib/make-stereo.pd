@@ -2,9 +2,9 @@
 #X obj 29 10 inlet~;
 #X obj 114 75 delwrite~ \$0-wow 100;
 #X obj 32 216 outlet~;
-#X obj 123 216 outlet~;
-#X obj 152 140 lop~ 5;
-#X obj 123 178 delread4~ \$0-wow;
+#X obj 274 215 outlet~;
+#X obj 273 121 lop~ 5;
+#X obj 274 177 delread4~ \$0-wow;
 #X obj 282 48 inlet~;
 #X connect 0 0 2 0;
 #X connect 0 0 1 0;
