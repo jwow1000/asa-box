@@ -6,7 +6,7 @@
 #X obj 126 341 catch~ outR;
 #X obj 36 364 hip~ 5;
 #X obj 126 365 hip~ 5;
-#N canvas 636 307 450 300 connect 1;
+#N canvas 636 307 450 300 connect 0;
 #X obj 29 134 netreceive;
 #X obj 29 62 r init-connect;
 #X msg 28 93 listen 3000;
@@ -50,11 +50,12 @@
 #X obj 372 337 loadbang;
 #X msg 357 382 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 1024;
 #X obj 369 273 f 0.8;
-#X msg 278 138 \; pd-load-sound clear \; pd-load-sound obj 20 20 \$1 1;
-#X obj 408 91 symbol main_pop;
-#X obj 278 90 symbol main_waves;
-#X obj 368 61 sel 1 2, f 12;
-#X obj 368 37 i 2;
+#X msg 429 196 \; pd-load-sound clear \; pd-load-sound obj 20 20 \$1 1;
+#X obj 559 149 symbol main_pop;
+#X obj 429 148 symbol main_waves;
+#X obj 429 106 sel 1 2, f 12;
+#X obj 429 82 i 2;
+#X obj 471 47 r set-the-sound;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -74,3 +75,4 @@
 #X connect 24 0 23 0;
 #X connect 24 1 22 0;
 #X connect 25 0 24 0;
+#X connect 26 0 25 1;
