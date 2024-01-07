@@ -1,4 +1,4 @@
-#N canvas 476 136 905 589 12;
+#N canvas 354 135 905 589 12;
 #X declare -path Faust_Stuff;
 #X declare -path lib;
 #X obj 48 451 dac~ 1 2;
@@ -24,7 +24,7 @@
 #X obj 249 344 lop~ 5;
 #X obj 249 246 r mother-vol;
 #X obj 369 249 loadbang;
-#N canvas 390 175 634 410 init 0;
+#N canvas 390 175 634 410 init 1;
 #X obj 8 30 loadbang;
 #X obj 8 104 t b b b b b;
 #X msg 48 204 \; pd dsp 1;
@@ -32,17 +32,19 @@
 #X obj 88 140 s load-the-sound;
 #X obj 27 246 s loadbang-1;
 #X obj 68 169 s init-connect;
+#X obj 55 75 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X connect 0 0 3 0;
 #X connect 1 1 5 0;
 #X connect 1 2 2 0;
 #X connect 1 3 6 0;
 #X connect 1 4 4 0;
 #X connect 3 0 1 0;
+#X connect 7 0 1 0;
 #X restore 26 124 pd init;
 #X obj 26 55 declare -path Faust_Stuff;
 #X obj 26 85 declare -path lib;
 #X text 234 5 48 53 55 60;
-#N canvas 63 88 450 300 load-sound 0;
+#N canvas 63 88 450 300 load-sound 1;
 #X obj 20 20 main_pop 1;
 #X restore 37 294 pd load-sound;
 #X obj 368 13 r load-the-sound;
@@ -54,8 +56,8 @@
 #X obj 559 149 symbol main_pop;
 #X obj 429 148 symbol main_waves;
 #X obj 429 106 sel 1 2, f 12;
-#X obj 429 82 i 2;
 #X obj 471 47 r set-the-sound;
+#X obj 429 82 i 2;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -66,7 +68,7 @@
 #X connect 8 0 6 1;
 #X connect 9 0 8 0;
 #X connect 10 0 20 0;
-#X connect 16 0 25 0;
+#X connect 16 0 26 0;
 #X connect 18 0 19 0;
 #X connect 19 0 17 0;
 #X connect 20 0 8 0;
@@ -74,5 +76,5 @@
 #X connect 23 0 21 0;
 #X connect 24 0 23 0;
 #X connect 24 1 22 0;
-#X connect 25 0 24 0;
-#X connect 26 0 25 1;
+#X connect 25 0 26 1;
+#X connect 26 0 24 0;

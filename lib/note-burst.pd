@@ -10,7 +10,7 @@
 #X obj 118 144 s \$0-root-midi;
 #X obj 525 22 inlet;
 #X text 568 21 messages;
-#N canvas 121 146 772 545 curve 0;
+#N canvas 121 146 772 545 curve 1;
 #X obj 513 36 inlet;
 #X obj 28 387 outlet;
 #X obj 28 39 inlet;
