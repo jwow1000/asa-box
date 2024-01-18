@@ -189,7 +189,7 @@
 #X connect 32 0 5 0;
 #X connect 33 0 5 0;
 #X restore 423 12 pd composition;
-#N canvas 560 527 785 384 send-changes 0;
+#N canvas 560 488 785 384 send-changes 0;
 #X obj 17 19 inlet;
 #X obj 194 28 r loadbang-\$1;
 #X obj 48 195 gen-line lopCut-\$1;
@@ -203,7 +203,7 @@
 #X obj 564 220 gen-line cricketVol-\$1;
 #X obj 608 111 route default;
 #X obj 608 135 t b;
-#X msg 194 52 lopCut 0.5 10000 \, lopGain 1 \, hipGain 0 \, filtQ 0 \, lfoRate 0.2 \, lfoRoot 0.75 \, lfoDepth 0.1 \, cricketVol 0;
+#X msg 194 52 lopCut 0.5 10000 \, lopGain 1 \, hipGain 0 \, filtQ 0 \, lfoRate 0.2 \, lfoRoot 0.75 \, lfoDepth 0.1 \, cricketVol 1;
 #X connect 0 0 9 0;
 #X connect 1 0 13 0;
 #X connect 9 0 2 0;
@@ -235,9 +235,9 @@
 #X obj 638 399 pack 0 5;
 #X obj 638 423 line~;
 #X obj 638 369 clip 0 1;
-#X obj 573 319 grains-main;
 #X obj 607 236 * 1;
 #X msg 396 245 stereo 15;
+#X obj 573 319 grains-main \$1;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
@@ -247,7 +247,7 @@
 #X connect 9 0 41 0;
 #X connect 10 0 9 0;
 #X connect 11 0 12 0;
-#X connect 12 0 69 0;
+#X connect 12 0 68 0;
 #X connect 13 1 59 0;
 #X connect 13 2 60 0;
 #X connect 16 0 26 0;
@@ -276,14 +276,14 @@
 #X connect 44 0 45 0;
 #X connect 47 0 39 0;
 #X connect 48 0 49 0;
-#X connect 48 0 70 0;
+#X connect 48 0 69 0;
 #X connect 49 0 23 0;
 #X connect 50 0 51 0;
 #X connect 52 0 10 0;
 #X connect 53 0 31 0;
 #X connect 54 0 61 0;
 #X connect 55 0 5 0;
-#X connect 56 0 69 0;
+#X connect 56 0 68 0;
 #X connect 57 0 47 0;
 #X connect 58 0 38 0;
 #X connect 59 0 14 0;
@@ -297,6 +297,6 @@
 #X connect 66 0 63 0;
 #X connect 66 0 63 1;
 #X connect 67 0 65 0;
-#X connect 68 0 62 0;
-#X connect 69 0 33 0;
-#X connect 70 0 13 0;
+#X connect 68 0 33 0;
+#X connect 69 0 13 0;
+#X connect 70 0 62 0;
